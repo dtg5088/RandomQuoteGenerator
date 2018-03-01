@@ -4,7 +4,8 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 
 //variable list
 var message = " ";
-//var quotes = [ ];
+
+
 
 //function list
 function getRandomQuote(){
@@ -14,8 +15,15 @@ function getRandomQuote(){
 
 function printQuote() {
   var readQuote = getRandomQuote();
+  var colorChange = randNumColor ();
   var quotePara = '<p class="quote">' + readQuote.quote + '</p>' + '<p class="source">' + readQuote.source + '</p>';
   document.getElementById('quote-box').innerHTML = quotePara;
+}
+
+function randNumColor (){
+  var letters = ['841a36','261a84','2243b7','d8b61c','0b5922','5f868e','3f49d3','8225ce'];
+  var backgroundColor = "#" + letters[Math.floor(Math.random() * letters.length)];
+  document.getElementById('quote-box').style.background = backgroundColor;
 }
 
 //defining array list of objects
@@ -65,5 +73,4 @@ var quotes = [
 ]
 
 //print data
-
-printQuote(getRandomQuote());
+printQuote();
