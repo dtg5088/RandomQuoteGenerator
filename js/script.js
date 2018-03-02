@@ -43,14 +43,14 @@ var quotes = [
     quote: "Never be limited by other people’s limited imaginations.",
     source: "Dr. Mae Jemison",
     citation: "",
-    year: "1995",
+    year: "1987",
     tag: "Inspirational"
   },
   {
     quote: "The cost of liberty is less than the price of repression.",
     source: "W.E.B. Du Bois",
-    citation: "",
-    year: "",
+    citation: "John Brown - A Biography: 'The Legacy of John Brown'",
+    year: "1909",
     tag: "Philisophical"
   },
   {
@@ -70,8 +70,8 @@ var quotes = [
   {
     quote: "If there is no struggle, there is no progress.",
     source: "Frederick Douglass",
-    citation: "",
-    year: "",
+    citation: "West India Emancipation Speech, Delivered at Canandaigua, New York",
+    year: "Aug. 4, 1857",
     tag: "inspirational"
   },
   {
@@ -82,11 +82,11 @@ var quotes = [
     tag: "inspirational"
   },
   {
-    quote: "The time is always right to do what is right.",
+    quote: "Every man must decide whether he will walk in the light of creative altruism or in the darkness of destructive selfishness.",
     source: "Dr. Martin Luther King, Jr.",
     citation: "",
-    year: "",
-    tag: "political"
+    year: "1957",
+    tag: "Philisophical"
   },
   {
     quote: "My lord, Increase me in knowledge.",
@@ -118,8 +118,8 @@ var quotes = [
   },
   {
     quote: "For what shall it profit a man, if he gain the whole world, and suffer the loss of his soul.",
-    source: "Jesus Christ",
-    citation: "",
+    source: "The Holy Bible",
+    citation: "Jesus Christ",
     year: "",
     tag: "Religious"
   },
@@ -127,13 +127,13 @@ var quotes = [
     quote: "Live as if you were to die tomorrow. Learn as if you were to live forever.",
     source: "Mahatma Gandhi",
     citation: "",
-    year: "",
+    year: "1869-1948",
     tag: "inspirational"
   },
   {
     quote: "A nation's culture resides in the hearts and in the soul of its people.",
     source: "Mahatma Gandhi",
-    citation: "",
+    citation: "1869-1948",
     year: "",
     tag: "political"
   },
@@ -141,7 +141,7 @@ var quotes = [
     quote: "Those who say religion has nothing to do with politics do not know what religion is.",
     source: "Mahatma Gandhi",
     citation: "",
-    year: "",
+    year: "1869-1948",
     tag: "political"
   },
 ]
