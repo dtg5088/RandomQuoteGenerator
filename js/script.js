@@ -13,6 +13,7 @@ function getRandomQuote(){
   return quotes[randomQuoteNum];
 }
 
+//function to print Quotes to page
 function printQuote() {
   var readQuote = getRandomQuote();
   var colorChange = randNumColor ();
@@ -29,6 +30,7 @@ function printQuote() {
   document.getElementById('quote-box').innerHTML = quotePara;// prints quotePara (paragragh) to page
 }
 
+//function used to create random color for background
 function randNumColor (){
   var colors = ['841a36','261a84','2243b7','d8b61c','0b5922','5f868e','3f49d3','8225ce','bf7220','910f05','1f319b'];//list of hexidecimals to build list of colors
   var backgroundColor = "#" + colors[Math.floor(Math.random() * colors.length)];//creates a random number that in return changes background color
