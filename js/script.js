@@ -16,8 +16,17 @@ function getRandomQuote(){
 function printQuote() {
   var readQuote = getRandomQuote();
   var colorChange = randNumColor ();
-  var quotePara = '<p class="quote">' + readQuote.quote + '</p>' + '<p class="source">' + readQuote.source + '</p>';
-  document.getElementById('quote-box').innerHTML = quotePara;
+  var quotePara = '<p class="quote">' + readQuote.quote + '</p>' + '<p class="source">' + readQuote.source + '</p>';// stating base print quote paragragh format
+  if(readQuote.citation !== ""){ //test if quote posseses a citation
+    quotePara +='<span class="citation">' + readQuote.citation + '</span>'
+} else if (readQuote.year !== "") { //test if quote posseses a year
+    quotePara +='<span class="year">' + readQuote.year +'</span>';
+} else if (readQuote.citation !== "" && readQuote.year !== "") { //test if quote posseses a citation and a year
+    quotePara +='<span class="citation">' + readQuote.citation + '</span>'
+    quotePara +='<span class="year">' + readQuote.year +'</span>';
+}
+
+  document.getElementById('quote-box').innerHTML = quotePara;// prints quotePara (paragragh) to page
 }
 
 function randNumColor (){
@@ -32,7 +41,7 @@ var quotes = [
     quote: "Never be limited by other people’s limited imaginations.",
     source: "Dr. Mae Jemison",
     citation: "",
-    year: "",
+    year: "1995",
     tag: "Inspirational"
   },
   {
@@ -44,9 +53,10 @@ var quotes = [
   },
   {
     quote: "In recognizing the humanity of our fellow beings, we pay ourselves the highest tribute.",
-    source: "Thurgood Marshall, first African American U.S. Supreme Court member",
+    source: "Thurgood Marshall, U.S. Supreme Court member",
     citation: "",
-    year: "political"
+    year: "",
+    tag: "political"
   },
   {
     quote: "Have a vision. Be demanding.",
